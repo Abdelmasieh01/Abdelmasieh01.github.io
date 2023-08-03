@@ -464,6 +464,14 @@ section div hr {
 
 /* Footer */
 
+/* Other screens */
+@media (max-width: 900px) {
+    .avatar {
+        display: none;
+    }
+}
+/* Other screens */
+
 /* Tablet Responsive */
 @media (max-width: 768px) {
     header .navbar nav {
@@ -495,10 +503,6 @@ section div hr {
     header .header-content img {
         max-width: 400px;
         margin: auto;
-    }
-
-    .avatar {
-        display: none;
     }
 
     #about .about-content,
