@@ -9,12 +9,6 @@
     <link rel="icon" href="./img/favicon.png">
     <!--Stylesheets-->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/skills.css">
-    <link rel="stylesheet" href="./css/portofolio.css">
-    <link rel="stylesheet" href="./css/services.css">
-    <link rel="stylesheet" href="./css/avatar.css">
     <!--Fontawesome icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -32,7 +26,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#portofolio">Portofilio</a></li>
+                    <li><a href="#portfolio">Portofilio</a></li>
                     <li><a href="#contact">Contact me</a></li>
                 </ul>
             </nav>
@@ -181,23 +175,23 @@
         </section>
         <!-- Services -->
 
-        <!-- Portofolio -->
-        <section id="portofolio">
+        <!-- Portfolio -->
+        <section id="portfolio">
             <div class="container">
                 <h2>
-                    <i class="fa-solid fa-laptop-code"> My <span class="text-primary">Portofilio</span> </i>
+                    <i class="fa-solid fa-laptop-code"> </i> My <span class="text-primary">Portofilio</span>
                 </h2>
                 <hr>
                 <div class="row">
                     <div class="item">
-                        <img src="./img/portofolio/stpeterlibrary.jpg" alt="St. Peter Library">
+                        <img src="./img/portfolio/stpeterlibrary.jpg" alt="St. Peter Library">
                         <div class="item-content">
                             <h3>St. Peter Library</h3>
                             <a href="https://stpeterlibrary.crabdance.com" target="_blank">View Website</a>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="./img/portofolio/stpeterapp.jpg" alt="St. Peter Library App">
+                        <img src="./img/portfolio/stpeterapp.jpg" alt="St. Peter Library App">
                         <div class="item-content">
                             <h3>St. Peter Library App</h3>
                             <a href="https://stpeterlibrary.flutterflow.app" target="_blank">View App</a>
@@ -206,9 +200,51 @@
                 </div>
             </div>
         </section>
-        <!-- Portofolio -->
+        <!-- Portfolio -->
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container">
+                <h2>
+                    <i class="fa-solid fa-headset"></i> Contact <span class="text-primary">Me</span>
+                </h2>
+                <hr>
+                <div class="row">
+                    <img src="./img/contact/contact.jpg" alt="Contact photo">
+                    <form action="https://formsubmit.io/abdelmasieh84@gmail.com" method="POST">
+                        <div class="form-container">
+                            <input name="_redirect" type="hidden" id="name" value="https://abdelmasieh01.github.io">
+
+                            <input type="text" name="Name" placeholder="Enter Your Name" required>
+                            <input type="email" name="Email" placeholder="Enter Your Email" required>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+                            
+                            <input name="_formsubmit_id" type="text" style="display: none;">
+                            
+                            <button type="submit" class="btn-primary">Submit</button>
+                        </div>
+                        <hr>
+                        <div class="btn-container">
+                            <a href="https://wa.me/+201558345185" class="btn-primary" target="_blank">
+                                <i class="fa-brands fa-whatsapp"></i> Whatsapp
+                            </a>
+                            <a href="https://www.linkedin.com/in/abdelmasieh-baselious/" class="btn-primary" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i> Linkedin
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Contact -->
     </main>
     <!--Main-->
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2023 | All rights reserved.</p>
+    </footer>
+    <!-- Footer -->
 
     <script src="./js/avatar.js"></script>
 </body>
