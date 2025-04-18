@@ -9,6 +9,7 @@ Author URI: http://bootstrapthemes.co
    ========================================================================== */
 :root {
     --main: #00a750;
+    --secondary: #ed2226;
 }
 
 html,
@@ -556,7 +557,7 @@ input::-ms-input-placeholder {
     z-index: 300;
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    background-color:rgba(34, 61, 97, 0.64);
+    background-color:rgba(34, 61, 97, 0.871);
     -webkit-transition:all .3s;
     -moz-transition:all .3s;
     transition:all .3s;
@@ -671,7 +672,7 @@ input::-ms-input-placeholder {
 }
 /*home section*/
 .home{
-    background: url(../images/homebg.jpg) no-repeat center center;
+    background: url(../images/roads1.jpg) no-repeat center center;
     background-size: cover;
 }
 .home_skew_border{
@@ -789,7 +790,7 @@ input::-ms-input-placeholder {
 }
 .main_feature .single_feature .single_feature_icon{
     border:1px solid #ddd;
-    width:70px;
+    width: 70px;
     height: 70px;
     line-height: 70px;
     margin:20px auto;
@@ -799,6 +800,7 @@ input::-ms-input-placeholder {
     margin-bottom:30px;
     color:var(--main);
     transition: all 0.6s;
+    font-size: 16px;
 }
 .main_feature .single_feature h4{
     transition: all 0.6s;
@@ -945,7 +947,7 @@ button.btn-md:hover {
     top:10%;
     width:80%;
     height: 80%;
-    background: rgba(231,76,60,0.6);
+    background: rgb(231, 77, 60);
     color:#fff;
     padding: 20px;
     opacity: 0;
@@ -1017,7 +1019,7 @@ button.btn-md:hover {
                     counter section css
 =======================================================================*/
 .counter{
-    background: url(../images/counterbg.jpg) no-repeat top center;
+    background: url(../images/saudi-arabia.jpg) no-repeat top center;
     background-size: cover;
 }
 .counter .main_counter_area{
@@ -1048,6 +1050,10 @@ button.btn-md:hover {
 
 /* Pricing2 Section */
 
+.pricing {
+    background: #f4f5f9;
+}
+
 .main_pricing_area{
     overflow: hidden;
 }
@@ -1063,44 +1069,42 @@ button.btn-md:hover {
 }
 .single_pricing:hover{
     box-shadow: 0px 1px 10px 1px #ccc;
-
-}
-.pricing_business .pricing_head{
-    background:var(--main);
 }
 .pricing_business .pricing_head .p_r{
     color:var(--main);
 }
-.pricing_business .pricing_head h3{
-    color:#fff;
-}
-.pricing_business .btn-md{
+.pricing_body .btn-md{
     background: var(--main);
 }
 
 
 .pricing_head{
     padding: 30px 0px;
-    background: #999999;
     position: relative;
+    background-size: cover;
     height: 200px;  
 }
-.pricing_head h3{
-    text-transform:uppercase;
-    color:#fff;
+.pricing_body h3{
+    text-transform:capitalize;
+    color:#000;
     font-size:24px;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 .pricing_head .pricing_price{
     background: #fff;
     position: absolute;
-    left: 30%;
-    bottom: -30%;
-    width: 150px;
-    height: 150px;
+    left: 35%;
+    bottom: -25%;
+    width: 100px;
+    height: 100px;
     margin:0 auto;
     padding: 30px 0px;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 10px rgba(244,245,249,0.3);
+    box-shadow: 0px 0px 0px 7px rgba(244,245,249,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .pricing_head .pricing_price .p_r{
     font-family: 'Source Sans Pro', sans-serif;
@@ -1114,7 +1118,11 @@ button.btn-md:hover {
 }
 .pricing_body{
     background: #f4f5f9;
-    padding: 80px 0px 30px 0px;
+    padding: 80px 20px 30px 20px;
+}
+.pricing_price i {
+    color: var(--main);
+    font-size: 3.5rem;
 }
 .single_pricing ul{
 
@@ -1130,6 +1138,69 @@ button.btn-md:hover {
 
 .single_pricing a{
     margin-top:30px;
+}
+
+.pricing_head.airport {
+    background-image: url('../images/airport.jpg');
+}
+
+.pricing_head.chauffeur {
+    background-image: url('../images/suadi-chauffeur.jpg');
+}
+
+.pricing_head.limo {
+    background-image: url('../images/limo.webp');
+}
+
+.pricing_body p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Certification section css */
+.certification {
+    margin-block: 5rem;
+    margin-inline: 6rem;
+    text-align: center;
+}
+
+.main_certifications {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(30rem, 100%), 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certification_head {
+    margin-block: 1rem;
+}
+
+.certification_head .separator3 {
+    margin-block: 0.5rem;
+}
+
+.main_certifications .certificate img {
+    color: var(--main);
+    height: 300px;
+    width: auto;
+}
+
+.main_certifications .certificate h3 {
+    color: var(--main);
+    font-weight: 600;
+}
+
+.main_certifications .certificate p {
+    font-size: 1rem;
 }
 
 
@@ -1407,7 +1478,7 @@ li .single_team_text p{
                         Trail Section 
 ======================================================================*/
 .main_trial_area{
-    background: url(../images/trailbg.jpg) no-repeat top center;
+    background: url(../images/al-khobar.jpg) no-repeat top center;
     overflow: hidden;
     background-size: cover;
     color:#fff;
