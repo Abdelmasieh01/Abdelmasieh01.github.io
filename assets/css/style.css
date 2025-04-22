@@ -1522,7 +1522,7 @@ li .single_team_text p{
     margin-top:10px;
 }
 .main_footer .flowus a i:hover{
-    color:var(--main);
+    color:var(--secondary);
 }
 
 .copyright_text{
@@ -1565,7 +1565,7 @@ li .single_team_text p{
 }
 
 .scrollup:hover {
-    background: var(--main);
+    background: var(--secondary);
     opacity: 1;
 }
 
