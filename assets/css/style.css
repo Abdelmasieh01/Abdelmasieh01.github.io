@@ -771,6 +771,10 @@ input::-ms-input-placeholder {
     color: #fff;
     background: var(--main);
 }
+.main_home.wow {
+    visibility: hidden;
+}
+  
 
 /*==================================================================
             Feature section Style

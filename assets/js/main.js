@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
     /*---------------------------------------------*
      * Mobile menu
      ---------------------------------------------*/
-    $('#bs-example-navbar-collapse-1').find('a[href*=#]:not([href=#])').click(function () {
+    $('#bs-example-navbar-collapse-1, .single_home_slider').find('a[href*=#]:not([href=#])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -32,7 +32,11 @@ jQuery(document).ready(function ($) {
         slidesToShow: 1,
         slidesToScroll: 1,
         prevArrow:"<i class='fa fa-angle-left nextprevleft'></i>",
-        nextArrow:"<i class='fa fa-angle-right nextprevright'></i>"
+        nextArrow:"<i class='fa fa-angle-right nextprevright'></i>",
+        autoplay: true,
+        autoplaySpeed: 5000,
+        fade: true,
+        speed: 500,
     });
 
 //    $(".study_slider").slick({
@@ -58,7 +62,8 @@ jQuery(document).ready(function ($) {
      ---------------------------------------------*/
 
     var wow = new WOW({
-        mobile: false // trigger animations on mobile devices (default is true)
+        mobile: false, // trigger animations on mobile devices (default is true)
+        live: true,
     });
     wow.init();
 
