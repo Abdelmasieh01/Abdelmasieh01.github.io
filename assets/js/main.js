@@ -24,8 +24,7 @@ jQuery(document).ready(function ($) {
         }
     });
 
-
-// slick slider active 
+    // slick slider active 
     $(".main_home_slider").slick({
         dots: false,
         infinite: true,
@@ -37,7 +36,11 @@ jQuery(document).ready(function ($) {
         autoplaySpeed: 5000,
         fade: true,
         speed: 500,
-    });
+    })
+    .on('beforeChange', function(event, slick, curr, next){
+        const bg = $(slick.$slides[next]).data('bg');
+        $('.home').css('background-image', `url(${bg})`);
+    }).slickAnimation();
 
 //    $(".study_slider").slick({
 //        dots: true,

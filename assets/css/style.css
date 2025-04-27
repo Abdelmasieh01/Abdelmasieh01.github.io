@@ -556,8 +556,8 @@ input::-ms-input-placeholder {
     right: 0; 
     z-index: 300;
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    background-color:rgba(34, 61, 97, 0.871);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .275);
+    background-color:rgba(34, 61, 97, 0.89);
     -webkit-transition:all .3s;
     -moz-transition:all .3s;
     transition:all .3s;
@@ -575,17 +575,16 @@ input::-ms-input-placeholder {
     margin: 15px auto;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
-    color:var(--main);
+    color:var(--secondary);
     background: transparent;
 }
 .main_menu_bg .navbar {}
 
 .main_menu_bg .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
-    color: var(--main);
+    color: var(--secondary);
     padding-bottom: 22px;
-    border-bottom: 1px solid var(--main);
+    border-bottom: 1px solid var(--secondary);
     background: transparent;
-
 }
 
 .main_menu_bg .navbar-nav>li>a {
@@ -593,7 +592,7 @@ input::-ms-input-placeholder {
     padding-bottom: 20px;
     text-transform: uppercase;
     font-size: 0.875rem;
-    color: #fff;
+    color: var(--main);
 }
 .navbar-brand {
     padding: 0px 15px;
@@ -670,10 +669,19 @@ input::-ms-input-placeholder {
 .head_title .subtitle{
     margin-top:30px;
 }
+.q {
+    color: var(--secondary);
+    font-weight: 900;
+}
+.sqets {
+    color: var(--main);
+    font-weight: 900;
+}
 /*home section*/
 .home{
     background: url(../images/roads1.jpg) no-repeat center center;
     background-size: cover;
+    transition: background-image 1s;
 }
 .home_skew_border{
     position: relative;
